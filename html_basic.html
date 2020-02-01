@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>웹 사전</title>
+    <link rel="stylesheet" href="pagestyle.css">
+    <script src="test.js"></script>
+  </head>
+
+
+  <body>
+    <div id="headgrid">
+      <h1><a href="webindex.html">웹 사전</a></h1>
+      <!-- <input type="button" value="night" onclick="night_day(this);"> -->
+    </div>
+
+    <div id="grid">
+      <ul id="list">
+        <h3>HTML</h3>
+        <li><a href="html_introduction.html">HTML 소개</a></li>
+        <li><a href="html_editors.html">HTML 편집기</a></li>
+        <li class="select"><a href="html_basic.html">HTML 기본</a></li>
+        <li><a href="html_elements.html">HTML 요소</a></li>
+      </ul>
+      <div id="contents">
+        <div class="explanation">
+          <h1 id="chapter">HTML 기본 예</h1>
+        </div>
+        <div class="explanation">
+          <p>이 예제에서 배우지 않은 태그를 사용하더라도 걱정 노노</p>
+          <p>다음에 다 배울거다 이거야</p>
+        </div>
+        <div class="explanation">
+          <h1>HTML 문서</h1>
+          <p>모든 HTML 문서는 <a style=color:red;background-color:rgb(230,230,230);>&lt!DOCTYPE html&gt</a>선언으로 시작해야 한다</p>
+          <p>HTML 문서 자체로는 <a style=color:red;background-color:rgb(230,230,230);>&lthtml&gt</a>로 시작하고 <a style=color:red;background-color:rgb(230,230,230);>&lt/html&gt</a>로 끝난다.</p>
+          <p>HTML 문서에서 보이는 부분은 <a style=color:red;background-color:rgb(230,230,230);>&ltbody&gt</a>와 <a style=color:red;background-color:rgb(230,230,230);>&lt/body&gt</a> 사이 이다.</p>
+          <div class="codebox">
+            <p class="code">
+              &lt!DOCYTPE html&gt<br>
+              &lthtml&gt<br>
+              &ltbody&gt<br>
+              <br>
+              &lt&gth1My First Heading&lt/h1&gt<br>
+              &lt&gtpMy first paragraph&lt/p&gt<br>
+              <br>
+              &lt/body&gt<br>
+              &lt/html&gt<br>
+            </p>
+          </div>
+        </div>
+        <div class="explanation">
+          <h1>HTML 제목</h1>
+          <p>HTML 제목은 <a class="accent">&lth1&gt</a>에서 <a class="accent">&lth6&gt</a>태그로 정의 된다.</p>
+          <p><a class="accent">&lth1&gt</a>가 가장 중요한 제목을 정의한다.</p>
+          <p><a class="accent">&lth6&gt</a>가 가장 중요하지 않은 제목을 정의한다.</p>
+          <div class="codebox">
+            <p class="code">
+              &lth1&gtThis is heading 1&lt/h1&gt<br>
+              &lth2&gtThis is heading 2&lt/h2&gt<br>
+              &lth3&gtThis is heading 3&lt/h3&gt<br>
+            </p>
+          </div>
+        </div>
+        <div class="explanation">
+          <h1>HTML 단락</h1>
+          <p>HTML 단락은 <a class="accent">&ltp&gt</a>태그로 정의 된다.</p>
+          <div class="codebox">
+            <p class="code">
+              &ltp&gtThis is a paragraph.&lt/p&gt<br>
+              &ltp&gtThis is another a paragraph.&lt/p&gt
+            </p>
+          </div>
+        </div>
+        <div class="explanation">
+          <h1>HTML 링크</h1>
+          <p>HTML 링크는 <a class="accent">&lta&gt</a>태그로 정의 된다.</p>
+          <div class="codebox">
+            <p class="code">
+              &lta href="https://aaasss445.github.io/web/html_introduction.html"&gtThis is a link&lt/a&gt
+            </p>
+          </div>
+          <p>링크 대상이 <a class="accent">href</a>속성에 지정되어 있다.</p>
+          <p>속성은 HTML 요소에 대한 추가 정보를 제공하는데 사용한다.</p>
+          <p>나중에 속성에 대해 더 배우게 된다.</p>
+        </div>
+        <div class="explanation">
+          <h1>HTML 이미지</h1>
+          <p>HTML 이미지는 <a class="accent">&ltimg&gt</a>태그로 정의 된다.</p>
+          <p>소스 파일(<a class="accent">src</a>), 대체 텍스트(<a class="accent">alt</a>), 너비(<a class="accent">width</a>), 높이(<a class="accent">height</a>) 속성으로 제공 된다.</p>
+          <div class="codebox">
+            <p class="code">
+              &ltimg src=대충 사진.png alt="대충 나오는 대체 글" width="100" height="150"&gt
+            </p>
+          </div>
+        </div>
+        <div class="explanation">
+          <h1>HTML 버튼</h1>
+          <p>HTML 버튼은 다음 <a class="accent">&ltbutton&gt</a>태그로 정의 된다.</p>
+          <div class="codebox">
+            <p class="code">
+              &ltbutton&gtClick me&lt/button&gt
+            </p>
+          </div>
+        </div>
+        <div class="explanation">
+          <h1>HTML 목록</h1>
+          <p>HTML 목록은 <a class="accent">&ltul&gt</a>(정렬되지 않은/ 글 머리 기호 목록) 또는 <a class="accent">&ltol&gt</a>(순서/ 번호가 매겨진 목록) 태그와 <a class="accent">&ltli&gt</a>태그 (목록 항목)로 정의 된다.</p>
+          <div class="codebox">
+            <p class="code">
+              &ltul&gt<br>
+              &nbsp;&nbsp;&nbsp;&ltli&gtCoffee&lt/li&gt<br>
+              &nbsp;&nbsp;&nbsp;&ltli&gtTea&lt/li&gt<br>
+              &nbsp;&nbsp;&nbsp;&ltli&gtMilk&lt/li&gt<br>
+              &lt/ul&gt<br>
+              <br>
+              &ltol&gt<br>
+              &nbsp;&nbsp;&nbsp;&ltli&gtCoffee&lt/li&gt<br>
+              &nbsp;&nbsp;&nbsp;&ltli&gtTea&lt/li&gt<br>
+              &nbsp;&nbsp;&nbsp;&ltli&gtMilk&lt/li&gt<br>
+              &lt/ol
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!--
+규칙
+그 챕터 제목을 h1 으로 하기
+그 뒤 작은 제목들은 h2로 하기
+챕터 제목과 작은 제목들 그리고 약간의 설명을 할때마다 div class="explanation"으로 나눔
+이미지는 image클래스
+코드를 적을때는 codebox로 감싸고 그 안에 code 클래스로 작성 code는 p, codebox는 div
+-->
+<!--
+할것
+
+<a title></a> 속도를 더 빠르게 고치기
+ -->

@@ -12,12 +12,23 @@ a {
 }
 #grid #list {
   margin:0;
+  margin-left:40px;
   border-right:1px solid black;
+  padding:0;
   padding-bottom:30px;
 }
+/* #grid #list h3 {
+  padding-left:40px;
+} */
 #grid #list li {
   padding-left:10px;
   list-style:none;
+}
+#grid #list .select {
+  background-color: rgb(130,130,130);
+}
+#grid #list .select a {
+color:white;
 }
 #contents {
   padding-left:25px;
@@ -27,8 +38,11 @@ a {
   margin-bottom:50px;
   border-bottom:1px solid grey;
 } */
-#contents h2 {
+#contents h1 {
   font-weight: normal;
+}
+#contents #chapter {
+  font-weight:bold;
 }
 #headgrid {
   display:grid;
@@ -61,10 +75,15 @@ a {
 .codebox {
   /* margin:0; */
   border: 20px solid rgb(230,230,230);
+  margin-bottom: 20px;
 }
 .image {
   margin:20px;
   margin-left:0;
+}
+.accent {
+  color:red;
+  background-color:rgb(230,230,230);
 }
 /* #otherweb {
   border-top: 1px solid black;
