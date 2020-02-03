@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>웹 사전</title>
     <link rel="stylesheet" href="pagestyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="test.js"></script>
   </head>
 
@@ -17,14 +18,15 @@
     <div id="grid">
       <ul id="list">
         <h3>HTML</h3>
-        <li><a href="html_introduction.html">HTML 소개</a></li>
-        <li class="select"><a href="html_editors.html">HTML 편집기</a></li>
-        <li><a href="html_basic.html">HTML 기본</a></li>
-        <li><a href="html_elements.html">HTML 요소</a></li>
+        <script>
+          listAdd();
+        </script>
       </ul>
       <div id="contents">
         <div class="explanation">
         <h1 id="chapter">HTML 편집기</h1>
+        <a href="html_introduction.html" class="button-l">이전</a>
+        <a href="html_basic.html" class='button-r'>다음</a>
         </div>
         <div class="explanation">
           <h1>메모장 또는 TextEdit을 사용하여 HTML 작성</h1>

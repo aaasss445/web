@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>웹 사전</title>
+    <link rel="stylesheet" href="pagestyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="test.js"></script>
+  </head>
+
+
+  <body>
+    <div id="headgrid">
+      <h1><a href="webindex.html">웹 사전</a></h1>
+      <!-- <input type="button" value="night" onclick="night_day(this);"> -->
+    </div>
+
+    <div id="grid">
+      <ul id="list">
+        <h3>HTML</h3>
+        <script>
+          listAdd();
+        </script>
+      </ul>
+      <div id="contents">
+        <div class="explanation">
+          <h1 id='chapter'>HTML 속성</h1>
+          <a href="html_elements.html" class="button-l">이전</a>
+          <a href="#" class='button-r'>다음</a>
+        </div>
+        <div class="explanation">
+          <p>속성은 HTML 요소에 대한 추가 정보를 제공한다.</p>
+        </div>
+        <div class="explanation">
+          <h1>HTML 속성</h1>
+          <ul>
+            <li>모든 HTML 요소는 <strong>속성</strong>을 가질 수 있다.</li>
+            <li>속선은 요소에 대한 <strong>추가 정보</strong>를 제공한다.</li>
+            <li>속성은 항상 <strong>시작 태그</strong>에 지정된다.</li>
+            <li>속성은 일반적으로 <strong>name = "value"</strong>와 같은 한 쌍으로 제공</li>
+          </ul>
+        </div>
+        <div class="explanation">
+          <h1>href 속성</h1>
+          <p>HTML 링크는 <a class="accent">&lta&gt</a>태그로 정의 된다.</p>
+          <p>링크 주소는 <a class='accent'>href</a>속성에 지정되어 있다.</p>
+          <div class="codebox">
+            <p class='code'>
+              &lta href="https://aaasss445.github.io/web/html_introduction.html"&gtThis is a link&lt/a&gt
+            </p>
+          </div>
+          <a class='accent'>&lta&gt</a>태그는 나중에 더 배운다.
+        </div>
+        <div class="explanation">
+          <h1>src 속성</h1>
+          <p>HTML 이미지는 <a class=accent>&ltimg&gt</a>태그로 정의 된다.</p>
+          <p>이미지 소스의 파일 이름은 <a class='accent'>src</a>속성에 지정되어 있다.</p>
+          <div class="codebox">
+            <p class='code'>
+              &ltimg src="img_man.jpg"&gt
+            </p>
+          </div>
+        </div>
+        <div class="explanation">
+          <h1>너비와 높이 속성</h1>
+          <p>HTML 이미지도 가지고 있는 <a class='accent'>width</a>와 <a class='accent'>height</a>인 이미지의 폭과 높이를 지정하는 속성</p>
+          <div class="codebox">
+            <p class='code'>
+              &ltimg src="img_man.jpg width="500" height="600"&gt
+            </p>
+          </div>
+          <p>너비와 높이는 기본적으로 픽셀 단위로 지정된다. 따라서 width="500"은 너비가 500픽셀임을 의미</p>
+          <p>HTML 이미지 챕터에서 나중에 배운다.</p>
+        </div>
+        <div class="explanation">
+          <h1>대체 속성</h1>
+          <p>이 <a class="accent">alt</a>속성은 이미지를 표시 할 수 없는 경우 사용할 대체 텍스트를 지정</p>
+          <div class="codebox">
+            <p class='code'>
+              &ltimg src="img_man.jpg" alt="man with a jacket"&gt
+            </p>
+          </div>
+          <p>이 <a class='accent'>alt</a>속성은 이미지를 표시할수 없는 경우에도 유용하다. (이미지가 존재하지 않는 경우)</p>
+        </div>
+        <div class="explanation">
+          <h1>스타일 속성</h1>
+          <p>이 <a class="accent">style</a>속성은 색상, 글꼴 크기 등과 같은 요소의 스타일을 지정하는데 사용</p>
+          <div class="codebox">
+            <p class="code">
+              &ltp style="color:red"&gtThis is a paragraph&lt/p&gt
+            </p>
+          </div>
+          <p>이 속성은 CSS 와 연계되는 부분이다.</p>
+        </div>
+        <div class="explanation">
+          <h1>lang 속성</h1>
+          <p>문서의 언어는 <a class="accent">&lthtml&gt</a>태그에서 선언 될 수 있다.</p>
+          <p>언어는 <a class="accent">속성으로 선언된다.</a></p>
+          <p>접근성 응용 프로그램및 검색 엔진에는 언어 선언이 중요하다.</p>
+          <div class="codebox">
+            <p class="code">
+              &lt!DOCTYPE html&gt<br>
+              &lthtml lang="en-US&gt"<br>
+              &ltbody&gt<br>
+              <br>
+              ...
+              <br>
+              &lt/body&gt
+              &lt/html&gt
+            </p>
+          </div>
+        </div>
+        <div class="explanation">
+          <h1>제목 속성</h1>
+          <p>여기서 <a class="accent">title</a>속성이 <a class="accent">&ltp&gt</a>요소에 추가된다. 단락 위에 마우스를 놓으면 제목 속성의 값이 툴팁으로 표시된다.</p>
+          <div class="codebox">
+            <p class="code">
+              &ltp title="I'm a tooltip"&gt<br>
+              This is a paragraph<br>
+              &lt/p&gt
+            </p>
+          </div>
+        </div>
+        <div class="explanation">
+          <h1>제안 : 소문자 속성 사용</h1>
+          <p>HTML5 표준에는 소문자 속성 이름이 필요하지 않다.</p>
+          <p>title 속성은 <strong>title</strong>또는 <strong>TITLE</strong>과 같이 대문자 또는 소문자로 쓸 수 있다.</p>
+          <p>HTML에서 소문자를 <strong>권장</strong>하고 XHTML과 같은 보다 엄격한 문서 유형에는 소문자를 <strong>요구</strong></p>
+        </div>
+        <div class="explanation">
+          <h1>제안 : 속성 값 인용</h1>
+          <p>HTML5 표준에서는 속성 값 주위에 따옴표가 필요하지 않다.</p>
+          <p><a class="accent">href</a>에 주소를 적을때 따옴표 없이 쓸수 있다.</p>
+          <p>하지만 따옴표 없이 적는건 좋지 않다.</p>
+          <p>XHTML과 같은 보다 엄격한 문서 유형에 대해서는 따옴표를 요구한다.</p>
+          <p>따옴표를 생략하면 오류가 발생할 수 있다.</p>
+        </div>
+        <div class="explanation">
+          <h1>작은 따옴표 또는 큰 따옴표?</h1>
+          <p>속성 값 주위에 큰 따옴표가 HTML에서 가장 일반적이지만 작은 따옴표도 사용할 수 있다.</p>
+          <p>경우에 따라 속성 값 자체에 큰 따옴표가 포함 된 경우 작은 따옴표를 사용해야 한다.</p>
+          <div class="codebox">
+            <p class="code">
+              &ltp title='John "ShotGun" Nelson'&gt<br>
+            </p>
+          </div>
+          <p>혹은 그 반대로도...</p>
+          <div class="codebox">
+            <p class="code">
+              &ltp title="John 'ShotGun' Nelson"&gt<br>
+            </p>
+          </div>
+        </div>
+        <div class="explanation">
+          <h1>단원 요약</h1>
+          <ul>
+            <li>모든 HTML요소는 <strong>속성</strong>을 가질 수 있다.</li>
+            <li>이 <a class="accent">title</a>속성은 추가 "툴팁"정보를 제공</li>
+            <li>이 <a class="accent">href</a>속성은 링크의 주소 정보를 제공</li>
+            <li><a class="accent">width</a>및 <a class="accent">height</a>속성은 이미지의 크기 정보를 제공</li>
+            <li>이 <a class="accent">alt</a>속성은 스크린 리더를 위한 텍스트를 제공</li>
+            <li>속성 이름으로 소문자를 <strong>권장</strong></li>
+          </ul>
+        </div>
+        <div class="explanation">
+          <h1>HTML 속성</h1>
+          <p>다음은 HTML에서 자주 사용되는 일부 속성을 알파벳순으로 나열한 것으로 이 자습서에서 자세히 알아볼수 있다.</p>
+          <div class="table-2 table-o" style="grid-template-columns:1fr 3fr;">
+            <a><strong>Attribute</strong></a><a><strong>Description</strong></a>
+          </div>
+          <div class="table-2 table-e table-l" style="grid-template-columns:1fr 3fr;">
+            <a>alt</a><a>이미지를 표시 할 수 없을 대 이미지의 대체 텍스트를 지정</a>
+          </div>
+          <div class="table-2 table-o table-l" style="grid-template-columns:1fr 3fr;">
+            <a>disabled</a><a>입력 요소를 비활성화해야 함을 지정</a>
+          </div>
+          <div class="table-2 table-e table-l" style="grid-template-columns:1fr 3fr;">
+            <a>href</a><a>링크의 URL(웹 주소)을 지정</a>
+          </div>
+          <div class="table-2 table-o table-l" style="grid-template-columns:1fr 3fr;">
+            <a>id</a><a>요소의 고유 ID를 지정</a>
+          </div>
+          <div class="table-2 table-e table-l" style="grid-template-columns:1fr 3fr;">
+            <a>src</a><a>이미지의 URL(웹 주소)을 지정</a>
+          </div>
+          <div class="table-2 table-o table-l" style="grid-template-columns:1fr 3fr;">
+            <a>style</a><a>요소의 인라인 CSS 스타일을 지정</a>
+          </div>
+          <div class="table-2 table-e table-l" style="grid-template-columns:1fr 3fr;">
+            <a>title</a><a>요소에 대한 추가 정보를 지정(툴팁으로 표시됨)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!--
+규칙
+1.  그 챕터 제목을 h1 으로 하기
+2.  그 뒤 작은 제목들도 h1으로 하기
+3.  예를 드는 부분은 h2로 하기
+4.  챕터 제목과 작은 제목들 그리고 약간의 설명을 할때마다 div class="explanation"으로 나눔
+5.  이미지는 image클래스
+6.  코드를 적을때는 codebox로 감싸고 그 안에 code 클래스로 작성 code는 p, codebox는 div
+7.  왼쪽 목록에서 선택된 챕터는 li태그에 class속성 값으로 select 클래스 넣는다.
+8.  표는 따로 div로 감싸지 않고 그냥 바로 하면 됨
+    table-숫자 : 숫자만큼의 열이 있음
+    table-l : 처음을 제외한 다음 칸들은 이거 다 넣어 줘야함
+    table-o,e : 홀수와 짝수를 뜻함 o는 홀수칸, e는 짝수칸
+-->
+<!--
+할것
+
+<a title></a> 속도를 더 빠르게 고치기
+ -->

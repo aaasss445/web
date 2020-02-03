@@ -56,8 +56,9 @@ color:white;
   margin:0;
 }
 .explanation {
+  padding-bottom: 50px;
   border-bottom:1px solid rgb(200,200,200);
-  margin-bottom:50px;
+  margin-bottom:20px;
 }
 .architecture {
   border:1px solid black;
@@ -84,6 +85,44 @@ color:white;
 .accent {
   color:red;
   background-color:rgb(230,230,230);
+}
+.button-l {
+  border:1px solid rgb(200,200,200);
+  padding: 8px 16px;
+  background-color: rgb(200,200,200);
+  float:left;
+  /* color:white; */
+}
+.button-r {
+  border:1px solid rgb(200,200,200);
+  padding: 8px 16px;
+  background-color: rgb(200,200,200);
+  float:right;
+  /* color:white; */
+}
+.table-3 {
+  border:1px solid black;
+  margin:0px;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
+.table-2 {
+  border:1px solid black;
+  margin:0px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+.table-3, .table-2 a {
+  padding:5px;
+}
+.table-o {
+  background-color:white;
+}
+.table-e {
+  background-color:rgb(230,230,230);
+}
+.table-l {
+  border-top:0;
 }
 /* #otherweb {
   border-top: 1px solid black;
