@@ -12,24 +12,23 @@
   <body>
     <div id="headgrid">
       <h1><a href="webindex.html">웹 사전</a></h1>
-      <!-- <input type="button" value="night" onclick="night_day(this);"> -->
     </div>
 
     <div id="grid">
       <ul id="list">
         <h3>HTML</h3>
-        <li><a href="html_introduction.html">HTML 소개</a></li>
-        <li><a href="html_editors.html">HTML 편집기</li>
-        <li><a href="html_basic.html">HTML 기본</a></li>
-        <li><a href="html_elements.html">HTML 요소</a></li>
-        <li><a href="html_attributes.html">HTML 속성</a></li>
+        <script>
+          listAdd();
+        </script>
       </ul>
       <div id="contents">
-        <div class="explanation">
-          <h1>챕터 제목</h1>
-          <a href="#" class="button-l">이전</a>
-          <a href="#" class='button-r'>다음</a>
+        <div class="heading">
+          <h1 id="chapter">챕터 제목</h1>
+          <script>
+            makebuttonlist();
+          </script>
         </div>
+        <hr>
       </div>
     </div>
   </body>
@@ -40,7 +39,7 @@
     id값으로 chapter 넣기
 2.  그 뒤 작은 제목들도 h1으로 하기
 3.  예를 드는 부분은 h2로 하기
-4.  챕터 제목과 작은 제목들 그리고 약간의 설명을 할때마다 div class="explanation"으로 나눔
+4.  hr로 작은 제주 끝나면 표시해주기
 5.  이미지는 image클래스
 6.  코드를 적을때는 codebox로 감싸고 그 안에 code 클래스로 작성 code는 p, codebox는 div
 7.  왼쪽 목록에서 선택된 챕터는 li태그에 class속성 값으로 select 클래스 넣는다.
@@ -58,8 +57,13 @@
  -->
  <!--
  약간의 팁
- 1. 현태 파일명 + 확장자 얻기
+ 1. 현재 파일명 + 확장자 얻기
  var thisfilefullname = document.URL.substring(document.URL.lastIndexOf("/") + 1, document.URL.length);
 
 출처: https://sourcestudy.tistory.com/229 [study]
+
+2.  앞이나 뒤로 공백 넣고 싶으면 아래 코드를 추가해라..
+
+    &nbsp;
+
  -->

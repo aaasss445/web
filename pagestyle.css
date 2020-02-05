@@ -5,6 +5,11 @@ a {
     text-decoration:none;
     color:black;
 }
+hr {
+  margin: 50px 0;
+  border:0;
+  border-top:1px solid rgb(200,200,200);
+}
 #grid {
   display:grid;
   grid-template-columns:200px 1fr;
@@ -23,6 +28,8 @@ a {
 #grid #list li {
   padding-left:10px;
   list-style:none;
+  padding-top:2px;
+  padding-bottom:2px;
 }
 #grid #list .select {
   background-color: rgb(130,130,130);
@@ -55,11 +62,14 @@ color:white;
   padding:20px;
   margin:0;
 }
-.explanation {
+.heading {
+  margin-bottom:80px;
+}
+/* .explanation {
   padding-bottom: 50px;
   border-bottom:1px solid rgb(200,200,200);
   margin-bottom:20px;
-}
+} */
 .architecture {
   border:1px solid black;
   margin:20px;
