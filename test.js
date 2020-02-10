@@ -33,18 +33,18 @@ function makebuttonlist(self) {
   $(".heading").append('<a href=' + a + ' class="button-l">이전</a>');
   $(".heading").append('<a href=' + s + ' class="button-r">다음</a>');
 }
-
-function listAdd(self) {
-  var filename = document.URL.substring(document.URL.lastIndexOf("/") + 1, document.URL.length);
-  for(var l in list){
-    if (list[l] == filename) {
-      $("#list").append('<li class="select"><a href=' + list[l] + '>' + l + '</a></li>');
-    }
-    else {
-      $("#list").append('<li><a href=' + list[l] + '>' + l + '</a></li>');
-    }
-  }
-}
+// 
+// function listAdd(self) {
+//   var filename = document.URL.substring(document.URL.lastIndexOf("/") + 1, document.URL.length);
+//   for(var l in list){
+//     if (list[l] == filename) {
+//       $("#list").append('<li class="select"><a href=' + list[l] + '>' + l + '</a></li>');
+//     }
+//     else {
+//       $("#list").append('<li><a href=' + list[l] + '>' + l + '</a></li>');
+//     }
+//   }
+// }
 
 function mainListAdd(self) {
   for(var l in list){
